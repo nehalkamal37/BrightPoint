@@ -28,7 +28,9 @@ const CtaSection: React.FC<CtaSectionProps> = ({
           <Button
             size="lg"
             onClick={() => window.location.href = buttonLink}
-            className="bg-white text-orange-600 hover:bg-blue-50 group"
+        /*    className="bg-white text-orange-600 hover:bg-blue-50 group"*/
+                        className="bg-blue-50 text-orange-600 hover:bg-blue-50 group"
+
           >
             {buttonText}
             <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />

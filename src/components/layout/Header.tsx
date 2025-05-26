@@ -34,12 +34,26 @@ const Header: React.FC = () => {
     }`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
+              <Link to="/" className="flex items-center">
+          {/* Logo Image */}
+          <img
+            src="/logo2.jpg"              // adjust path as needed
+            alt="BrightPoint Summit Logo"
+            className="h-14 w-22 mr-2 mb-13 p-2 rounded-lg overflow-hidden shadow-lg 
+            transition-transform duration-300 transform hover:scale-105 md:h-20 md:w-24"
+          />
+          {/* Site Title */}
+          <span className={`text-2xl font-bold ${isScrolled ? 'text-blue-900' : 'text-white'}`}>
+            BrightPoint<span className="text-orange-500">Summit</span>
+          </span>
+        </Link>
+        {/*
           <Link to="/" className="flex items-center">
             <span className={`text-2xl font-bold ${isScrolled ? 'text-blue-900' : 'text-white'}`}>
               BrightPoint<span className="text-orange-500">Summit</span>
             </span>
           </Link>
-
+*/}
           {/* Mobile Menu Button */}
           <button 
             className="md:hidden p-2 focus:outline-none"
