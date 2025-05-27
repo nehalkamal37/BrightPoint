@@ -36,14 +36,30 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
               <Link to="/" className="flex items-center">
           {/* Logo Image */}
+<div className="overflow-hidden w-24 h-[60px rounded-lg shadow-lg">
+  <img
+    src="/logo2.jpg"
+    alt="BrightPoint Summit Logo (text only)"
+    className="w-full mt-[-10px]  /* adjust -40px */
+               transform transition-transform duration-300
+               hover:scale-105"
+/>
+</div>
+
+
+
+
+{/*
           <img
             src="/logo2.jpg"              // adjust path as needed
             alt="BrightPoint Summit Logo"
             className="h-14 w-22 mr-2 mb-13 p-2 rounded-lg overflow-hidden shadow-lg 
             transition-transform duration-300 transform hover:scale-105 md:h-20 md:w-24"
           />
+          */}
+
           {/* Site Title */}
-          <span className={`text-2xl font-bold ${isScrolled ? 'text-blue-900' : 'text-white'}`}>
+          <span className={`text-2xl font-bold ${isScrolled ? 'text-blue-900' : 'text-blue-900'}`}>
             BrightPoint<span className="text-orange-500">Summit</span>
           </span>
         </Link>
@@ -70,32 +86,34 @@ const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <Link to="/" className={`font-medium transition-colors ${
-              isScrolled ? 'text-gray-700 hover:text-blue-900' : 'text-white hover:text-orange-300'
+              isScrolled ? 'text-gray-700 hover:text-blue-900' : 'text-blue-900 hover:text-orange-300'
             }`}>
               Home
             </Link>
             <Link to="/about" className={`font-medium transition-colors ${
-              isScrolled ? 'text-gray-700 hover:text-blue-900' : 'text-white hover:text-orange-300'
+              isScrolled ? 'text-gray-700 hover:text-blue-900' : 'text-blue-900 hover:text-orange-300'
             }`}>
               About
             </Link>
             <Link to="/services" className={`font-medium transition-colors ${
-              isScrolled ? 'text-gray-700 hover:text-blue-900' : 'text-white hover:text-orange-300'
+              isScrolled ? 'text-gray-700 hover:text-blue-900' : 'text-blue-900 hover:text-orange-300'
             }`}>
               Services
             </Link>
             <Link to="/portfolio" className={`font-medium transition-colors ${
-              isScrolled ? 'text-gray-700 hover:text-blue-900' : 'text-white hover:text-orange-300'
+              isScrolled ? 'text-gray-700 hover:text-blue-900' : 'text-blue-900 hover:text-orange-300'
             }`}>
               Portfolio
             </Link>
             <Link to="/blog" className={`font-medium transition-colors ${
-              isScrolled ? 'text-gray-700 hover:text-blue-900' : 'text-white hover:text-orange-300'
+              isScrolled ? 'text-gray-700 hover:text-blue-900' : 'text-blue-900 hover:text-orange-300'
             }`}>
               Blog
             </Link>
             <Link to="/contact" className={`font-medium transition-colors ${
-              isScrolled ? 'text-gray-700 hover:text-blue-900' : 'text-white hover:text-orange-300'
+           isScrolled ? 'text-gray-700 hover:text-blue-900' : 'text-blue-900 hover:text-orange-300'
+
+             /* isScrolled ? 'text-gray-700 hover:text-blue-900' : 'text-white hover:text-orange-300'  */
             }`}>
               Contact
             </Link>
