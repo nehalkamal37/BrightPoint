@@ -36,11 +36,11 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
               <Link to="/" className="flex items-center">
           {/* Logo Image */}
-<div className="overflow-hidden w-24 h-[60px rounded-lg shadow-lg">
+<div className="overflow-hidden w-24 h-[60px] mr-[7px] rounded-lg shadow-lg">
   <img
     src="/logo2.jpg"
     alt="BrightPoint Summit Logo (text only)"
-    className="w-full mt-[-10px]  /* adjust -40px */
+    className="w-full mt-[-14px]  /* adjust -40px */
                transform transition-transform duration-300
                hover:scale-105"
 />
