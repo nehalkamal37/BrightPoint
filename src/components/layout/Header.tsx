@@ -40,13 +40,44 @@ const Header: React.FC = () => {
   };
 
   return (
+    // ... (keep all the imports and initial code the same until the return statement)
+
+  <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-4'
+  }`}>
+
+    <div className="container mx-auto px-4 md:px-6">
+      <div className="flex items-center justify-between">
+        <Link to="/" className="flex items-center">
+          {/* Logo Image - Modified for better mobile behavior */}
+          <div className="w-12 h-12 md:w-24 md:h-[60px] flex-shrink-0">
+            <img
+              src="/logo2.jpg"
+              alt="BrightPoint Summit Logo"
+              className="w-full h-full object-contain"
+            />
+          </div>
+
+          {/* Site Title - Adjusted spacing */}
+          <span className={`ml-2 text-xl md:text-2xl font-bold ${
+            !isScrolled && isHome ? 'text-white' : 'text-blue-900'
+          }`}>
+            BrightPoint<span className="text-orange-500">Summit</span>
+          </span>
+        </Link>
+
+   {/*
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-6'
     }`}>
+
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            {/* Logo Image */}
+
+
+          
+            {/* Logo Image 
             <div className="overflow-hidden w-24 h-[60px] mr-[7px] rounded-lg shadow-lg">
               <img
                 src="/logo2.jpg"
@@ -54,15 +85,9 @@ const Header: React.FC = () => {
                 className="w-full mt-[-14px] transform transition-transform duration-300 hover:scale-105"
               />
             </div>
-
+*/}
             {/* Site Title */}
-            <span className={`text-2xl font-bold ${
-              !isScrolled && isHome ? 'text-white' : 'text-blue-900'
-            }`}>
-              BrightPoint<span className="text-orange-500">Summit</span>
-            </span>
-          </Link>
-
+          
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 focus:outline-none"
@@ -130,6 +155,7 @@ const Header: React.FC = () => {
           </nav>
         </div>
       </div>
+      
     </header>
   );
 };

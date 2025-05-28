@@ -11,15 +11,17 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div>
-                <Link to="/" className="flex items-center">
-                      {/* Logo Image */}
-                      <img
-                        src="/logo2.jpg"              // adjust path as needed
-                        alt="BrightPoint Summit Logo"
-                        className="h-12 w-full mr-2  p-1 rounded lg overflow-hidden shadow-lg transition-transform duration-300 transform hover:scale-105 md:h-16 md:w-20"
-                      />
-                 
-                    </Link>
+            <Link to="/" className="flex items-center">
+  {/* Logo Image with better size control */}
+  <div className="w-[120px] md:w-[150px] h-auto flex-shrink-0">
+    <img
+      src="/logo2.jpg"
+      alt="BrightPoint Summit Logo"
+      className="w-full h-auto object-contain rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+    />
+  </div>
+</Link>           
+               
             <h3 className="text-xl font-bold mb-4">BrightPoint<span className="text-orange-500">Summit</span></h3>
             <p className="mb-4 text-gray-300">
               Empowering businesses with innovative software solutions that drive growth and efficiency.
