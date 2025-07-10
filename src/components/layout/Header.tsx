@@ -103,8 +103,8 @@ const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            {['/', '/about', '/services', '/portfolio', '/blog', '/contact'].map((path, idx) => {
-              const labels = ['Home', 'About', 'Services', 'Portfolio', 'Blog', 'Contact'];
+            {['/', '/about', '/services', '/portfolio', '/blog', '/contact','/flyer'].map((path, idx) => {
+              const labels = ['Home', 'About', 'Services', 'Portfolio', 'Blog', 'Contact','Flyer'];
               return (
                 <Link
                   key={path}
