@@ -43,7 +43,7 @@ export default function Flyer() {
         {/* Header */}
         <div className="bg-gradient-to-r from-blue-600 to-indigo-700 px-8 py-6 text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-white">
-            🚀 BrightPoint Summit
+             BrightPoint Summit
           </h1>
           <p className="mt-2 text-lg text-blue-100">
             Innovative Software Solutions for Your Business
