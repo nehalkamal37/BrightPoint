@@ -89,10 +89,12 @@ export default function Flyer() {
               efficient operations. Their team understood our business and delivered
               beyond expectations."
             </blockquote>
+            {/*
             <div className="text-right mt-3">
-              <p className="font-semibold text-blue-700">— Sarah Johnson</p>
+              <p className="font-semibold text-blue-700">— Sarah John</p>
               <p className="text-sm text-gray-600">CTO, Retail Innovations Inc.</p>
             </div>
+            */}
           </section>
 
           {/* Case Study Section */}
@@ -108,6 +110,8 @@ export default function Flyer() {
               <div className="mt-2 space-y-1 text-gray-600">
                 <p>Developed for a National Retail Chain</p>
                 <p>50+ Locations streamlined</p>
+                <p> We build software that fits your business</p>
+
               </div>
               <div className="mt-3 flex flex-wrap gap-2">
                 {['React', 'Node.js', 'PostgreSQL', 'Docker'].map((tech, index) => (
