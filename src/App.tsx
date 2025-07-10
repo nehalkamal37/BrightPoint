@@ -9,7 +9,7 @@ import PortfolioPage from './pages/PortfolioPage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
 import QuotePage from './pages/QuotePage';
-
+import Flyer from './pages/Flyer';
 function App() {
   return (
     <Router>
@@ -18,6 +18,8 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/f" element={<Flyer />} />
+ 
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
