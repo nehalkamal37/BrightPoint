@@ -24,7 +24,7 @@ const AboutPage: React.FC = () => {
       </div>
       
       <AboutSection showFull={true} />
-      
+      {/*
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
@@ -54,7 +54,7 @@ const AboutPage: React.FC = () => {
           </div>
         </div>
       </section>
-      
+      */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">

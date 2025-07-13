@@ -32,9 +32,9 @@ const HomePage: React.FC = () => {
       <ServicesSection />
       
       <CaseStudiesSection limit={2} />
-      
+      {/*
       <TestimonialsSection />
-      
+      */}
       <BlogSection />
       
       <CtaSection />
