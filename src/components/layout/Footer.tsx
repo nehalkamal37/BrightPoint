@@ -26,20 +26,7 @@ const Footer: React.FC = () => {
             <p className="mb-4 text-gray-300">
               Empowering businesses with innovative software solutions that drive growth and efficiency.
             </p>
-            <div className="flex space-x-4">
-              <a href="https://facebook.com" aria-label="Facebook" className="hover:text-orange-400 transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="https://twitter.com" aria-label="Twitter" className="hover:text-orange-400 transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="https://linkedin.com" aria-label="LinkedIn" className="hover:text-orange-400 transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="https://instagram.com" aria-label="Instagram" className="hover:text-orange-400 transition-colors">
-                <Instagram size={20} />
-              </a>
-            </div>
+         
           </div>
 
           {/* Quick Links */}
